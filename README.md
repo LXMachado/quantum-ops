@@ -220,8 +220,8 @@ See `agency-dashboard-api/openapi.yaml` for detailed OpenAPI specification.
 
 Below is a screenshot of the main dashboard, showcasing the key metrics, charts, and navigation elements.
 
-![Dashboard Screenshot](dashboard-screenshot.png)
-*The Quantum Ops Command Center dashboard with real-time metrics, interactive charts, and intuitive navigation for managing agency operations.*
+![Dashboard Screenshot](https://via.placeholder.com/800x600/4F46E5/FFFFFF?text=Quantum+Ops+Dashboard)
+*The Quantum Ops Command Center dashboard with real-time metrics, interactive charts, and intuitive navigation for managing agency operations. (Replace with actual screenshot: dashboard-screenshot.png)*
 
 ## Contributing
 
