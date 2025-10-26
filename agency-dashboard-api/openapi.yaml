@@ -1,0 +1,144 @@
+openapi: 3.0.0
+info:
+  title: Agency Dashboard API
+  version: 1.0.0
+paths:
+  /api/v1/health:
+    get:
+      summary: Health check
+      responses:
+        '200':
+          description: OK
+  /api/v1/auth/register:
+    post:
+      summary: Register user
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                email:
+                  type: string
+                password:
+                  type: string
+      responses:
+        '201':
+          description: User created
+  /api/v1/auth/login:
+    post:
+      summary: Login user
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                email:
+                  type: string
+                password:
+                  type: string
+      responses:
+        '200':
+          description: Login successful
+  /api/v1/clients:
+    get:
+      summary: Get clients
+      responses:
+        '200':
+          description: List of clients
+    post:
+      summary: Create client
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                name:
+                  type: string
+                email:
+                  type: string
+                phone:
+                  type: string
+                company:
+                  type: string
+      responses:
+        '201':
+          description: Client created
+  /api/v1/jobs:
+    get:
+      summary: Get jobs
+      responses:
+        '200':
+          description: List of jobs
+    post:
+      summary: Create job
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                title:
+                  type: string
+                description:
+                  type: string
+                clientId:
+                  type: string
+                status:
+                  type: string
+      responses:
+        '201':
+          description: Job created
+  /api/v1/projects:
+    get:
+      summary: Get projects
+      responses:
+        '200':
+          description: List of projects
+    post:
+      summary: Create project
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                name:
+                  type: string
+                description:
+                  type: string
+                status:
+                  type: string
+      responses:
+        '201':
+          description: Project created
+  /api/v1/events:
+    get:
+      summary: Get events
+      responses:
+        '200':
+          description: List of events
+    post:
+      summary: Create event
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                title:
+                  type: string
+                date:
+                  type: string
+                  format: date-time
+      responses:
+        '201':
+          description: Event created
