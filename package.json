@@ -38,5 +38,9 @@
     "tailwindcss": "^3.4.18",
     "typescript": "^5.0.2",
     "vite": "^5.4.21"
+  },
+  "overrides": {
+    "lodash": "^4.18.1",
+    "lodash-es": "^4.18.1"
   }
 }
