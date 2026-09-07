@@ -118,9 +118,12 @@ VITE_API_BASE_URL=http://localhost:4000/api/v1/
 ```
 
 ### Backend (agency-dashboard-api/.env)
+
+> **Security:** Never commit a real database URL. If a credential is ever exposed, revoke or rotate it in Neon immediately; deleting it from the README does not remove it from Git history.
+
 ```
-DATABASE_URL="postgresql://default:uUBSA51HLsJh@ep-summer-cherry-a7fn9kcp-pooler.ap-southeast-2.aws.neon.tech/verceldb?sslmode=require&channel_binding=require"
-JWT_SECRET="your-secret-key"
+DATABASE_URL="postgresql://<username>:<password>@<host>/<database>?sslmode=require"
+JWT_SECRET="replace-with-a-long-random-secret"
 CORS_ORIGIN="http://localhost:5173"
 NODE_ENV="development"
 PORT=4000
